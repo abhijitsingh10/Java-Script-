@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Calculate the reverse of the given number.</title>
+</head>
+<script>
+
+let rev = 0;
+let num = parseInt(prompt('Enter an integer: '));;
+let lastDigit;
+
+while(num != 0){
+	lastDigit = num % 10;
+  rev = rev * 10 + lastDigit;
+  num = Math.floor(num/10);
+}
+
+console.log("Reverse number : "+rev);
+
+</script>
+<body>
+    
+</body>
+</html>
